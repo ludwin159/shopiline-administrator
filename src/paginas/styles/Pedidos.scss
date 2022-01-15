@@ -1,0 +1,18 @@
+.MisPedidosUsuario {
+    background: #ff9aa2;
+    min-height: 100vh;
+    margin-top: 0;
+    display: grid;
+    left: 0;
+    top: 0;
+}
+.MisPedidosUsuario h1{
+    text-align: center;
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+.container-mis-pedidos{ 
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 19px;
+}

@@ -1,0 +1,165 @@
+$iniciar-sesion-verde:  #fa707c;
+
+$iniciar-sesion-verde-boton: #ff5733;
+$iniciar-sesion-plomo:#646664;
+
+
+/* Estilo de Iniciar Sesión */
+.Iniciar-sesion-admin{
+    min-height: 100vh;
+    background: $iniciar-sesion-verde;
+}
+.iniciar-sesion-container{
+    max-width: 450px;
+    margin: auto;
+    
+}
+
+.formulario-ingreso{
+    background: rgba($color:#ff9aa2, $alpha: 0.8);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    grid-gap: 10px;
+    border-radius: 6px;
+    padding-bottom: 25px;
+  
+}
+.formulario-ingreso h1{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.6rem;
+}
+.formulario-ingreso img{
+    width: 200px;
+    border-radius: 50%;
+    justify-self: center;
+
+}
+.formulario-ingreso h2{
+    margin-bottom: 0;
+    color: whitesmoke;
+    font-size: 1.4rem
+}
+.formulario-ingreso input{
+    height: 1.9rem;
+    border-radius: 5px;
+    border: 1px solid $iniciar-sesion-plomo;
+    outline: none;
+    color: $iniciar-sesion-plomo;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+.formulario-ingreso button{
+    height: 2.5rem;
+    background: #c70039;
+    box-shadow: 1px 1px 4px 1px $iniciar-sesion-plomo;
+    color: white;
+    font-size: 1.3rem;
+    border: 1px solid $iniciar-sesion-plomo;
+    border-radius: 6px;
+    margin-top: 10px;
+    outline: none;
+    letter-spacing: 0.2rem;
+}
+.formulario-ingreso button:hover{
+    font-weight: bold;
+    font-size: 1.35rem;
+    background: #900c3f;
+
+}
+
+@media ( min-width:768px){
+    .Iniciar-sesion-admin{
+        background-image: url('../../imagenes/zanabria.png' );
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh ;
+        background-attachment: fixed;
+    }
+    .iniciar-sesion-container{
+        padding-top: 35px;
+    }
+
+}
+/* Estilos de Menu */
+.MenuAdmi{
+    min-height: 100vh;
+    background: #ff9aa2;
+}
+.container-menu{
+    max-width: 568px;
+    margin: auto;
+    padding: 20px;
+    padding-top:50px ;
+    text-align: center;
+
+}
+
+.menu-datos{
+    display: grid;
+    grid-template-areas: 
+    "logo logo datos datos"
+    "opcion opcion opcion opcion "
+    ;
+}
+.menu-datos img{
+    max-width:100px;
+    border-radius: 50%;
+    grid-area: logo;
+    justify-self: center;
+}
+.datos-admin{
+    grid-area: datos;
+}
+.opciones-admi{
+    grid-area:opcion;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding-top:15px;
+}
+.datos-admin h1{
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    color: whitesmoke;;
+    text-align: left;
+}
+.datos-admin button{
+    background: $iniciar-sesion-verde-boton;
+    border: 1px solid  $iniciar-sesion-plomo;
+    height: 2rem;
+    width: 100px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 3px 1px $iniciar-sesion-plomo;
+}
+.datos-admin button:hover{
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: #c93818;
+}
+.opcion button{
+    min-height: 6rem;
+    border-radius: 6px;
+    width: 95%;
+    border: 1px solid $iniciar-sesion-plomo;
+    font-size: 1.2rem; 
+    background: #c70039;
+    color: whitesmoke;
+    box-shadow: 1px 1px 3px 1px $iniciar-sesion-plomo;
+    outline: none;
+}
+.opcion button:hover{
+    background: #900c3f;
+    box-shadow: 1px 1px 4px 1px $iniciar-sesion-plomo;
+}
+.imagenDisza{
+    display: grid;
+    width: 90%;
+    max-width: 558px;
+    margin: auto;
+    border-radius: 6px;
+    opacity: 0.9;
+    
+}

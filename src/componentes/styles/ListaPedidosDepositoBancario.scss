@@ -1,0 +1,114 @@
+$Mis-pedidos-color-fondo:#ff9aa2;
+$Mis-pedidos-color-plomo: #707070;
+$Mis-pedidos-color-verde:  #c70039;
+$Mis-pedidos-color-verde-hover: #900c3f;
+$Mis-pedidos-color-azul: #ff5733;
+.container-pedido{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;;
+    width: 95%;
+    margin: auto;
+    max-width: 768px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    
+
+}
+.container-pedido h3{
+    font-size: 0.9rem;
+    color: $Mis-pedidos-color-plomo;
+    margin: 0;
+    
+}
+.container-productos-lista-pedidos{
+    display: grid;
+    grid-template-columns: repeat(5,20%) ;
+    grid-gap: 2px;
+}
+.container-productos-lista-pedidos .title{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: $Mis-pedidos-color-verde-hover;
+    border-radius: 2px;
+}
+
+.container-productos-lista-pedidos .element{
+    font-size: 0.7rem;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    color: $Mis-pedidos-color-plomo;
+}
+
+
+
+.Total-pedido{
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background: $Mis-pedidos-color-azul;
+    border-radius: 5px;
+}
+.Total-pedido small{ 
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+.input-pedido-deposito, .boton-pedido-deposito{
+    border: 1px solid $Mis-pedidos-color-plomo;
+    box-shadow: 1px 1px 3px 1px $Mis-pedidos-color-plomo;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    max-width: 600px;
+    margin: auto;
+    width: 90%;
+}
+.boton-pedido-deposito,.confirmarPedidoEntrega{
+    background: $Mis-pedidos-color-verde;
+    color: white;
+    outline: none;
+    margin-top: 5px;
+}
+.boton-pedido-deposito:hover,.confirmarPedidoEntrega:hover{
+    background: $Mis-pedidos-color-verde-hover;
+    font-weight: bold;
+}
+.boton-pedido-deposito:focus{
+    outline:none
+}
+
+@media screen and (min-width:600px){
+    .container-pedido h3{
+        font-size: 1rem;
+    }
+    .container-productos-lista-pedidos .title{
+        font-size: 0.9rem;
+        padding: 2px;
+    }
+    .container-productos-lista-pedidos .element{
+        font-size: 0.8rem;
+    }
+}
+
+.avisoIncorrecto{
+    width: 98%;
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+}
+.confirmarPedidoEntrega{
+    height: 2rem;
+    outline: none;
+    border-radius: 5px;;
+    border: 1px solid $Mis-pedidos-color-plomo;
+    box-shadow: 1px 1px 4px 1px $Mis-pedidos-color-plomo;
+}
+.cancelar{
+    max-width: 100px;
+}
